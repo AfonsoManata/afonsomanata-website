@@ -521,7 +521,7 @@ section{
   }
 
   .projects{
-    position: center;
+    align-items: center;
   }
 }
 
