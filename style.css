@@ -502,21 +502,21 @@ section{
     padding: 10rem 3% 2rem;
   }
 
-  .experience-items::before{
+  .timeline-items::before{
     left:7px;
   }
 
-  .experience-item:nth-child(odd){
+  .timeline-item:nth-child(odd){
     padding-right: 0;
     text-align: left;
   }
 
-  .experience-item:nth-child(odd),
-  .experience-item:nth-child(even){
+  .timeline-item:nth-child(odd),
+  .timeline-item:nth-child(even){
     padding-left: 37px;
   }
   
-  .experience-dot{
+  .timeline-dot{
     left: 0;
   }
 }
