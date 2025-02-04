@@ -498,65 +498,28 @@ section{
     width: 56vw;
   }
 
+  .section{
+    padding: 10rem 3% 2rem;
+  }
+
+  .experience-items::before{
+    left:7px;
+  }
+
+  .experience-item:nth-child(odd){
+    padding-right: 0;
+    text-align: left;
+  }
+
+  .experience-item:nth-child(odd),
+  .experience-item:nth-child(even){
+    padding-left: 37px;
+  }
   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  .experience-dot{
+    left: 0;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 canvas {
   position: fixed;
