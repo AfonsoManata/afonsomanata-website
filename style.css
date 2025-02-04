@@ -519,6 +519,10 @@ section{
   .timeline-dot{
     left: 0;
   }
+
+  .projects{
+    position: center;
+  }
 }
 
 canvas {
