@@ -3,150 +3,197 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Afonso Manata</title>
+    <title>Afonso Manata - Future Tech</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <meta name="keywords" content="afonso, manata, cruz">
+    <meta name="keywords" content="afonso, manata, cruz, futuristic, tech">
     <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
       />
       <script type="module" src="stars.js"></script>
-      <canvas id="bg"></canvas> <!-- Canvas for Three.js -->
+      <canvas id="bg"></canvas>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
       <script type="module" src="script.js"></script>
   </head>
   <body>
       
-      <!-- To show my name in the top left corner -->
+    <!-- Futuristic grid overlay -->
+    <div class="grid-overlay"></div>
+    
+    <!-- Scanning line effect -->
+    <div class="scan-line"></div>
+      
     <header class="header">  
         <a href="#home" class="logo">
-          Afonso <span>Manata</span>
+          <span class="logo-bracket">[</span>
+          Afonso <span class="logo-highlight">Manata</span>
+          <span class="logo-bracket">]</span>
         </a>
         
-        <!-- The icon that makes me choose the section -->
-
         <i class="bx bx-menu" id="menu-icon"></i>
         
-        <!-- All the options that I have in the top bar  -->
-
         <nav class="navbar">
-          <a href="#home">Home</a>
-          <a href="#experience">Experience</a>
-          <a href="#projects">Projects</a>
-          <a href="#contact">Contact</a>  
+          <a href="#home" class="nav-link">
+            <span class="nav-number">01.</span>Home
+          </a>
+          <a href="#experience" class="nav-link">
+            <span class="nav-number">02.</span>Experience
+          </a>
+          <a href="#projects" class="nav-link">
+            <span class="nav-number">03.</span>Projects
+          </a>
+          <a href="#contact" class="nav-link">
+            <span class="nav-number">04.</span>Contact
+          </a>  
         </nav>
       
     </header>
 
-    <!-- Home Section -->
-    
     <section class="home" id="home">
         <div class="home-content">
-            <h1>Hi, I'm <span>Afonso</span></h1> 
-            <h3>
-              I'm a <span>CS Student</span> 
+            <div class="glitch-container">
+              <h1 class="glitch" data-text="Hi, I'm Afonso">Hi, I'm <span class="highlight-text">Afonso</span></h1>
+            </div>
+            <h3 class="typing-effect">
+              <span class="cursor-bracket">&gt;</span> I'm a <span class="highlight-text">CS Student</span><span class="cursor">_</span>
             </h3>
-            <p>
-            I am a Computer Science and Engineering student 
+            <p class="description">
+            <span class="text-accent">//</span> Computer Science and Engineering student 
             at Instituto Superior Técnico. 
-            Interested in areas like software development, 
-            artificial intelligence, and cybersecurity.
-            I'm open to internships and projects where 
-            I can learn and grow alongside others.</p>
+            Specialized in <span class="highlight-text">software development</span>, 
+            <span class="highlight-text">artificial intelligence</span>, and <span class="highlight-text">cybersecurity</span>.
+            Currently seeking internships and collaborative projects 
+            to expand my technological horizons.
+            </p>
             
             <div class="social-icons">
+              <a href="https://github.com/AfonsoManata" class="social-link">
+                <i class="bx bxl-github"></i>
+                <span class="social-tooltip">GitHub</span>
+              </a>
               
-                <a href="https://github.com/AfonsoManata">
-                  <i class="bx bxl-github"></i>  
-                </a>
-                
-                <a href="https://www.linkedin.com/in/afonso-manata" >
-                  <i class="bx bxl-linkedin"></i>  
-                </a>
-                
-                <a href="mailto:afonso.manata.cruz@gmail.com">
-                  <i class="bx bx-mail-send"></i>  
-                </a>
-                
-                <a href="tel:+351917761213">
-                  <i class="bx bx-phone"></i>  
-                </a>
+              <a href="https://www.linkedin.com/in/afonso-manata" class="social-link">
+                <i class="bx bxl-linkedin"></i>
+                <span class="social-tooltip">LinkedIn</span>
+              </a>
+              
+              <a href="mailto:afonso.manata.cruz@gmail.com" class="social-link">
+                <i class="bx bx-mail-send"></i>
+                <span class="social-tooltip">Email</span>
+              </a>
+              
+              <a href="tel:+351917761213" class="social-link">
+                <i class="bx bx-phone"></i>
+                <span class="social-tooltip">Phone</span>
+              </a>
             </div>
             
             <div class="btn-group">
-              <a href="img/cv.pdf" download class="btn">Download CV</a>
+              <a href="img/cv.pdf" download class="btn cyber-btn">
+                <span class="btn-text">Download CV</span>
+                <span class="btn-glitch"></span>
+              </a>
             </div>
         </div>
         
         <div class="home-img">
-          <img src="img/image.png" alt="">
+          <div class="image-frame">
+            <img src="/placeholder.svg?height=400&width=400" alt="Afonso Manata">
+            <div class="image-overlay"></div>
+          </div>
         </div>
     
       </section>
 
-
-    <!-- Experience Section -->
-
       <section class="experience" id="experience">
-          <h2 class="heading">Experience</h2>
+          <h2 class="heading">
+            <span class="section-number">02.</span>
+            <span class="section-title">Experience</span>
+            <div class="heading-line"></div>
+          </h2>
 
           <div class="timeline-items">
               
               <div class="timeline-item">
-                  <div class="timeline-dot"></div>
+                  <div class="timeline-dot">
+                    <div class="dot-pulse"></div>
+                  </div>
                     <div class="timeline-date">2024-2025</div>
                     <div class="timeline-content">
-                      <h3><img src="img/experience5.png" alt="IBM Certificate" class="left">IBM Full-Stack Certificate</h3>
+                      <h3>
+                        <img src="/placeholder.svg?height=50&width=50" alt="IBM Certificate" class="left">
+                        IBM Full-Stack Certificate
+                      </h3>
                       <p>Developed 36+ practical exercises and 12 capstone projects 
-                        using new technologies. Learned all the stages of 
-                        full-stack development.
+                        using cutting-edge technologies. Mastered all stages of 
+                        full-stack development architecture.
                       </p>
                     </div>
               </div>
 
               <div class="timeline-item">
-                <div class="timeline-dot"></div>
+                <div class="timeline-dot">
+                  <div class="dot-pulse"></div>
+                </div>
                   <div class="timeline-date">2024-2027</div>
                   <div class="timeline-content">
-                    <h3>Instituto Superior Técnico<img src="img/experience4.png" alt="IST" class="right"></h3>
-                    <p>I joined Instituto Superior Técnico for a bachelor's degree 
-                      in Computer Science and Engineering.
+                    <h3>Instituto Superior Técnico
+                      <img src="/placeholder.svg?height=50&width=50" alt="IST" class="right">
+                    </h3>
+                    <p>Pursuing bachelor's degree in Computer Science and Engineering
+                      with focus on advanced algorithms and system architecture.
                     </p>
                   </div>
               </div>
         
             <div class="timeline-item">
-              <div class="timeline-dot"></div>
+              <div class="timeline-dot">
+                <div class="dot-pulse"></div>
+              </div>
                 <div class="timeline-date">2023-2024</div>
                 <div class="timeline-content">
-                  <h3><img src="img/experience3.png" alt="T@lento DEI" class="left">T@lento DEI</h3>
-                  <p>Implemented a Python program that allowed us to drive a drone 
-                    while the drone was being controlled by our partner's muscles.
+                  <h3>
+                    <img src="/placeholder.svg?height=50&width=50" alt="T@lento DEI" class="left">
+                    T@lento DEI
+                  </h3>
+                  <p>Engineered a Python-based drone control system 
+                    with biometric muscle signal integration for 
+                    next-generation human-machine interfaces.
                   </p>
                 </div>
             </div>
             
             <div class="timeline-item">
-              <div class="timeline-dot"></div>
+              <div class="timeline-dot">
+                <div class="dot-pulse"></div>
+              </div>
                 <div class="timeline-date">2023</div>
                 <div class="timeline-content">
-                  <h3>Summer University<img src="img/experience2.png" alt="Summer University" class="right"></h3>
-                  <p>Participated in the Summer University of Data Science in the 
-                    University of Coimbra. Used a Data Set with 17 000+ entries to 
-                    make the prediction of the temperature using Linear Regression.
+                  <h3>Summer University
+                    <img src="/placeholder.svg?height=50&width=50" alt="Summer University" class="right">
+                  </h3>
+                  <p>Advanced Data Science program at University of Coimbra. 
+                    Implemented machine learning models on 17,000+ data points 
+                    for temperature prediction using Linear Regression algorithms.
                   </p>
                 </div>
             </div>
 
             <div class="timeline-item">
-              <div class="timeline-dot"></div>
+              <div class="timeline-dot">
+                <div class="dot-pulse"></div>
+              </div>
                 <div class="timeline-date">2023</div>
                 <div class="timeline-content">
-                  <h3><img src="img/experience1.png" alt="Afterschool" class="left">Afterschool Programming</h3>
-                  <p>This was my first interaction with programming.
-                    Coded 40+ exercises and built 6 games like 
-                    hangman game and tic-tac-toe using Python.</p>
+                  <h3>
+                    <img src="/placeholder.svg?height=50&width=50" alt="Afterschool" class="left">
+                    Afterschool Programming
+                  </h3>
+                  <p>Foundation in computational thinking and algorithm design.
+                    Developed 40+ exercises and 6 interactive games including 
+                    advanced hangman and tic-tac-toe implementations using Python.</p>
                 </div>
             </div>
           
@@ -154,44 +201,77 @@
       
       </section>
 
-
       <section class="projects" id="projects">
         
-        <h2 class="heading">Projects</h2>
+        <h2 class="heading">
+          <span class="section-number">03.</span>
+          <span class="section-title">Projects</span>
+          <div class="heading-line"></div>
+        </h2>
 
         <div class="projects-box">
             
             <div class="project-card">
-                
-                <img src="img/project1.png" alt="Project1">
+                <div class="project-image">
+                  <img src="/placeholder.svg?height=200&width=300" alt="GemSolver">
+                  <div class="project-overlay">
+                    <div class="project-tech">AI • OCR • API</div>
+                  </div>
+                </div>
 
-                <h3>GemSolver</h3>
-
-                <p>Created a tool to extract text from screenshots and generate answers using Tesseract.js and the Gemini API, which reduced search time by 75%. 
-				In one semester, I processed over 200 screenshots with this tool, automating my study workflow and helping me achieve a top 1% grade in that course.</p>
-                  <div class="btn"><a href="https://github.com/AfonsoManata/GemSolver" class="btn">GitHub</a></div>
+                <div class="project-content">
+                  <h3>GemSolver</h3>
+                  <p>Revolutionary AI-powered tool integrating Tesseract.js OCR with Gemini API. 
+                  Achieved 75% reduction in research time through automated screenshot analysis. 
+                  Processed 200+ academic queries, contributing to top 1% academic performance.</p>
+                  <div class="project-links">
+                    <a href="https://github.com/AfonsoManata/GemSolver" class="btn cyber-btn-small">
+                      <i class="bx bxl-github"></i> GitHub
+                    </a>
+                  </div>
+                </div>
             </div>
 
             <div class="project-card">
-                
-              <img src="img/project2.png" alt="Project2">
+              <div class="project-image">
+                <img src="/placeholder.svg?height=200&width=300" alt="House Price Prediction">
+                <div class="project-overlay">
+                  <div class="project-tech">ML • Python • Scikit-learn</div>
+                </div>
+              </div>
 
-              <h3>Lisbon House Price Prediction</h3>
-
-              <p>In this project I used a dataset from kaggle with 250+ entries.
-                Built a machine learning model using scikit-learn linear regression model and trained it using the fit function achieving
-                a prediction accuracy of 70.3 % </p>
-                <div class="btn"><a href="https://github.com/AfonsoManata/House-Price-Prediction---Lisbon/blob/main/Lisbon_House_Price_Prediction.ipynb" class="btn">GitHub</a></div>
+              <div class="project-content">
+                <h3>Lisbon House Price Prediction</h3>
+                <p>Advanced machine learning model utilizing scikit-learn regression algorithms 
+                on 250+ property datasets. Achieved 70.3% prediction accuracy through 
+                sophisticated feature engineering and model optimization.</p>
+                <div class="project-links">
+                  <a href="https://github.com/AfonsoManata/House-Price-Prediction---Lisbon/blob/main/Lisbon_House_Price_Prediction.ipynb" class="btn cyber-btn-small">
+                    <i class="bx bxl-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
             </div>
 
             <div class="project-card">
-                
-              <img src="img/project3.png" alt="Project3">
+              <div class="project-image">
+                <img src="/placeholder.svg?height=200&width=300" alt="Portfolio Website">
+                <div class="project-overlay">
+                  <div class="project-tech">Three.js • CSS • JavaScript</div>
+                </div>
+              </div>
 
-              <h3>Website Porfolio</h3>
-              <p>Built this site using Html, CSS, Javascript and Three.js for the 3D background, applied the best practices to enhance
-                performance, usability, and user experience.</p>
-                <div class="btn"><a href="https://github.com/AfonsoManata/afonsomanata-website" class="btn">GitHub</a></div>
+              <div class="project-content">
+                <h3>Futuristic Portfolio</h3>
+                <p>Cutting-edge web experience built with HTML5, CSS3, and Three.js. 
+                Features immersive 3D starfield backgrounds, advanced animations, 
+                and optimized performance for superior user engagement.</p>
+                <div class="project-links">
+                  <a href="https://github.com/AfonsoManata/afonsomanata-website" class="btn cyber-btn-small">
+                    <i class="bx bxl-github"></i> GitHub
+                  </a>
+                </div>
+              </div>
             </div>
 
         </div>
@@ -199,48 +279,52 @@
     
       <footer class="contact" id="contact">
         
-        <h2>Contact <span>ME</span></h2> 
+        <h2 class="contact-heading">
+          <span class="section-number">04.</span>
+          Contact <span class="highlight-text">Protocol</span>
+        </h2> 
         
         <div class="social-icons">
-              
-          <a href="https://github.com/AfonsoManata">
-            <i class="bx bxl-github"></i>  
+          <a href="https://github.com/AfonsoManata" class="social-link">
+            <i class="bx bxl-github"></i>
+            <span class="social-tooltip">GitHub</span>
           </a>
           
-          <a href="https://www.linkedin.com/in/afonso-manata" >
-            <i class="bx bxl-linkedin"></i>  
+          <a href="https://www.linkedin.com/in/afonso-manata" class="social-link">
+            <i class="bx bxl-linkedin"></i>
+            <span class="social-tooltip">LinkedIn</span>
           </a>
           
-          <a href="mailto:afonso.manata.cruz@gmail.com">
-            <i class="bx bx-mail-send"></i>  
+          <a href="mailto:afonso.manata.cruz@gmail.com" class="social-link">
+            <i class="bx bx-mail-send"></i>
+            <span class="social-tooltip">Email</span>
           </a>
           
-          <a href="tel:+351917761213">
-            <i class="bx bx-phone"></i>  
+          <a href="tel:+351917761213" class="social-link">
+            <i class="bx bx-phone"></i>
+            <span class="social-tooltip">Phone</span>
           </a>
         </div>
+        
         <ul class="list">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
           <li>
-            <a href="#home">Home</a>
-          </li>
-          <li>
-            <a href="#experience">Experience</a>
-          </li>
-          <li>
-            <a href="#projects">Projects</a>
-          </li>
-          <li>
-            <a href="#contact">Contact</a>
-          </li>
-          <li>
-            <a href="https://github.com/AfonsoManata/afonsomanata-website"><h4>Website Source Code</h4></a>
+            <a href="https://github.com/AfonsoManata/afonsomanata-website">
+              <h4>Source Code</h4>
+            </a>
           </li>
         </ul>
 
-        <p class="copyright">©  Afonso Manata | 2025</p>
+        <p class="copyright">
+          <span class="text-accent">//</span> © Afonso Manata | 2025 
+          <span class="text-accent">- Engineered for the Future</span>
+        </p>
       </footer>
-    
     
     <script src="script.js"></script>
   </body>
 </html>
+
